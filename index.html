@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valor Tabela FIPE</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    ></script>
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Consultar Valor Tabela FIPE</h1>
+      <div class="form" id="form">
+        <label>
+          <h4>Mês de referência</h4>
+          <select id="referencia" disabled>
+            <option value="">-</option>
+          </select>
+        </label>
+
+        <label>
+          <h4>Típo de veículo</h4>
+          <select id="tipo_veiculo" disabled>
+            <option value="">-</option>
+            <option value="1">Carro</option>
+            <option value="2">Moto</option>
+            <option value="3">Caminhão</option>
+          </select>
+        </label>
+
+        <label>
+          <h4>Marca</h4>
+          <select id="marca" disabled>
+            <option value="">-</option>
+          </select>
+        </label>
+
+        <label>
+          <h4>Modelo</h4>
+          <select id="modelo" disabled>
+            <option value="">-</option>
+          </select>
+        </label>
+
+        <label>
+          <h4>Ano</h4>
+          <select id="ano" disabled>
+            <option value="">-</option>
+          </select>
+        </label>
+      </div>
+      
+      <button type="button" id="search" disabled>CONSULTAR</button>
+
+      <div id="resultado"></div>
+    </div>
+  </body>
+</html>
